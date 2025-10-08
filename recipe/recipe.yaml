@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "0.1.1"
+  version: "0.1.2"
 
 package:
   name: gym-aloha
@@ -10,7 +10,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/g/gym-aloha/gym_aloha-${{ version }}.tar.gz
-    sha256: 614ae1cf116323e7b5ae2f0e9bd282c4f052aee15e839e5587ddce45995359bc
+    sha256: d9086ed9e837c38e823af631a4595d3711a2b91454638292c379d31614a46827
 
 build:
   script: ${{ PYTHON }} -m pip install --no-deps --no-build-isolation .
@@ -41,7 +41,7 @@ tests:
       python_version: ${{ python_min }}.*
 
 about:
-  summary: A gym environment for ALOHA 
+  summary: A gym environment for ALOHA
   license: Apache-2.0
   license_file: LICENSE
   homepage: https://github.com/huggingface/gym-aloha
